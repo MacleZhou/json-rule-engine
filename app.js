@@ -10,7 +10,7 @@ app.enable ( `trust proxy` );
 app.use ( express.json () );
 app.use ( express.urlencoded ( { extended : true } ) );
 
-app.post ( `/api/v1/admission`, ( req, res, next ) => {
+app.post ( `/api/v1/admission`, ( req, res ) => {
 	const { body: { name, sslc, puc, graduation, niitinterview } } = req;
 
 	engine.addRule ( admission );
