@@ -20,33 +20,18 @@
             "value": 70
           },
           {
-            "fact": "niitinterview",
-            "operator": "equal",
-            "value": "true"
-          }
-        ]
-      },
-      {
-        "all": [
-          {
-            "fact": "sslc",
-            "operator": "greaterThanInclusive",
-            "value": 70
-          },
-          {
-            "fact": "puc",
-            "operator": "greaterThanInclusive",
-            "value": 70
-          },
-          {
-            "fact": "graduation",
-            "operator": "greaterThanInclusive",
-            "value": 70
-          },
-          {
-            "fact": "niitinterview",
-            "operator": "equal",
-            "value": "false"
+            "any": [
+              {
+                "fact": "niitinterview",
+                "operator": "equal",
+                "value": true
+              },
+              {
+                "fact": "niitinterview",
+                "operator": "equal",
+                "value": false
+              }
+            ]
           }
         ]
       }
